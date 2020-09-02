@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: "Lato", sans-serif;
 }
+.twitter{
+    display: flex;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.sidebar{
+    width: 25%;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    border-right: 1px solid rgb(230,236,240);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar ul{
+    list-style-type: none;
 }
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration:none;
+    color: #000;
+    padding: 18px 35px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.sidebar ul li a:hover{
+    background-color: #e8f5fe;
+    color: #1da1f2;
+}
+.icons{
+    margin-right: 15px;
+    font-size: 24px;
+}
+.logo{
+    color: #1da1f2;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.sidebar_btn{
+    margin: 15px 0;
+}
+.sidebar_btn a{
+    text-decoration: none;
+    background:#1da1f2;
+    color:#fff;
+    padding: 13px 35px;
+    margin: 0 35px;
+    border-radius:50px;
+    outline: none;
+    display: block;
+    text-align: center;
+}
+/* Posts style */
+.posts{
+    width: 50%;
+    margin-left: 25%;
+    border-right: 1px solid  #e6ecf0;
+}
+.posts_home{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    font-weight: 700;
+    border-bottom: 1px solid #e6ecf0;
 }
