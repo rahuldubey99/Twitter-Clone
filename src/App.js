@@ -1,14 +1,15 @@
-import React from 'react';
-
-import './App.css';
-import Sidebar from './component/Sidebar';
-import Twittes from './component/Twittes';
+import React from "react";
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import Twittes from "./components/Twittes";
+import Trends from "./components/Trends";
 
 function App() {
   return (
     <div className="twitter">
-          <Sidebar/>
-          <Twittes/>
+      <Sidebar />
+      <Twittes />
+      <Trends />
     </div>
   );
 }
